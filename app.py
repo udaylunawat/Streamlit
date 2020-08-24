@@ -49,10 +49,10 @@ EXTERNAL_DEPENDENCIES = {
     "output/models/inference/yolov3-custom_last.weights": {
         "url": "https://storage.googleapis.com/dracarys3_bucket/Public/yolov3-custom_last.weights",
         "size": 246305388
-    }
+    },
     "cfg/yolov3-custom.cfg":{
         "url": "https://raw.githubusercontent.com/udaylunawat/Automatic-License-Plate-Recognition/master/cfg/yolov3-custom.cfg"
-    }
+    },
     "cfg/obj.names":{
         "url": "https://raw.githubusercontent.com/udaylunawat/Automatic-License-Plate-Recognition/master/cfg/obj.names"
     }
@@ -65,7 +65,7 @@ def download_file(file_path):
 
     # Don't download the file twice. (If possible, verify the download using the file length.)
     if os.path.exists(file_path):
-        print("file name:{}, size:{}".format(file_path, os.path.getsize(file_path)))
+        st.write("file name:{}, size:{}".format(file_path, os.path.getsize(file_path)))
         if "size" not in EXTERNAL_DEPENDENCIES[file_path]:
             return
         elif os.path.getsize(file_path) == EXTERNAL_DEPENDENCIES[file_path]["size"]:
