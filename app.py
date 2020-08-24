@@ -50,10 +50,10 @@ EXTERNAL_DEPENDENCIES = {
         "url": "https://storage.googleapis.com/dracarys3_bucket/Public/yolov3-custom_last.weights",
         "size": 246305388
     },
-    "cfg/yolov3-custom.cfg":{
+    "cfg/yolov3-custom.cfg": {
         "url": "https://raw.githubusercontent.com/udaylunawat/Automatic-License-Plate-Recognition/master/cfg/yolov3-custom.cfg"
     },
-    "cfg/obj.names":{
+    "cfg/obj.names": {
         "url": "https://raw.githubusercontent.com/udaylunawat/Automatic-License-Plate-Recognition/master/cfg/obj.names"
     }
 }
